@@ -15,6 +15,8 @@ const rawConfig = {
     dbPass: process.env.DB_PASS,
     serverPort: process.env.SERVER_PORT,
     nodeEnv: process.env.NODE_ENV,
+    jwtSecret: process.env.JWT_SECRET,
+    jwtExpiry: process.env.JWT_EXPIRY,
 };
 
 const config = new Proxy(rawConfig, {
